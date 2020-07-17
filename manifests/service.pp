@@ -14,7 +14,7 @@ class matrix_synapse::service {
     enable    => true,
     subscribe => [
       File[$service_file],
-      File[$matrix_synapse::config::config_file],
+      Hash_file[$matrix_synapse::config::config_file],
     ],
   }
 }
