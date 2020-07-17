@@ -2,11 +2,18 @@
   "name": "karlinde-matrix_synapse",
   "version": "0.1.0",
   "author": "Karl Linderhed",
-  "summary": "",
+  "summary": "Simple module for installing and configuring the synapse homeserver for the Matrix messaging platform",
   "license": "MIT",
-  "source": "",
+  "source": "https://github.com/Karlinde/puppet-module-matrix_synapse",
   "dependencies": [
-
+    {
+      "name": "puppet-python",
+      "version_requirement": ">= 4.0.0 < 5.0.0"
+    },
+    {
+      "name": "fiddyspence-hash_file",
+      "version_requirement": ">= 1.0.0 < 2.0.0"
+    }
   ],
   "operatingsystem_support": [
     {
